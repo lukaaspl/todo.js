@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo.js</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="manifest" href="img/icon/site.webmanifest">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/prod_styles.css">
+</head>
+
+<body>
+    <div class="loader">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>ToDoList.js</h1>
+            <img class="drawing-pin" src="img/drawing-pin.png" alt="Drawing pin">
+            <i class="fas fa-plus-circle new-task"></i>
+            <section class="new-task-form">
+                <input type="text" class="new-task-input" placeholder="e.g. clean the kitchen, take dog for a walk">
+                <button>Add</button>
+                <div class="validate-msg"></div>
+            </section>
+        </header>
+
+        <section class="search-box">
+            <input type="text" class="search-input" placeholder="search for your tasks...">
+            <i class="fas fa-search search-icon"></i>
+        </section>
+
+        <main>
+            <ul></ul>
+        </main>
+
+        <div class='no-task'></div>
+        <div class="tasks-summary">
+            <div>
+                <i class="fas fa-clipboard"></i>
+                total tasks: <span class="total-tasks">21</span>
+            </div>
+            <div>
+                <i class="fas fa-clipboard-list"></i>
+                tasks to be done: <span class="tasks-to-do">11</span>
+            </div>
+            <div>
+                <i class="fas fa-clipboard-check"></i>
+                completed tasks: <span class="completed-tasks">10</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sign">&copy; designed by <a href="http://lukaszroman.tk" target="_blank">luke roman</a></div>
+
+    <script src="js/todo.js"></script>
+</body>
+
+</html>
